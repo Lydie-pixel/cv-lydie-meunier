@@ -1,0 +1,81 @@
+/*Police de texte*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-style: italic;
+}
+@font-face {
+     font-family: 'Lato';
+    src: url('https://fonts.google.com/specimen/Lato');
+}
+/* Corps de texte*/
+h1,h2,h3{
+    font-family: "Lato";
+}
+body {
+    font-family: 'Raleway' ;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#cv-container {
+    width: 1160px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+/* HEADER */
+header {
+    background: #17abb3;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+address {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+address a, address span {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    background: #17abb3;
+}
+/* PROFIL = INDENTER + JUSTIFIER */
+#profil p {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
