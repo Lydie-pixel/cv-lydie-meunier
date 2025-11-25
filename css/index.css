@@ -133,3 +133,102 @@ footer .logo {
     display: block;
     margin: 0 auto 10px auto;
 }
+/*Police de texte*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.google.com/specimen/Raleway');
+    font-style: italic;
+}
+@font-face {
+     font-family: 'Lato';
+    src: url('https://fonts.google.com/specimen/Lato');
+}
+/* Titres*/
+.header-right h1 {
+    font-size: 45px;
+    margin: 0 0 5px 0;
+    font-family: 'Lato';
+}
+
+.header-right h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#cv-container {
+    width: 1160px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+/* PROFIL = INDENTER + JUSTIFIER */
+#profil p {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+/* TABLEAUX */
+/* Première colonne en gras */
+td:first-child {
+    font-weight: 600;
+}
+/* Dernière colonne alignée à droite en bleu */
+td:last-child {
+    text-align: right;
+    color: #17abb3;
+}
+/*LANGUES EN NOIR */
+#langues td {
+    color: #000 !important;
+}
+/* ----- PUCES LISTES ----- */
+ul {
+    list-style-type: square;
+}
+::marker {
+    color: #17abb3;
+}
+/* Lignes du tableau */
+.hover-table .ligne1 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hover-table .ligne2 {
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+}
+/* ----- FOOTER ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background: #17abb3;
+    font-size: 14px;
+}
