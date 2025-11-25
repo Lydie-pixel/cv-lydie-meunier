@@ -1,99 +1,135 @@
-/*Police de texte*/
-@font-face {
-    font-family: 'Raleway';
-    src: url('https://fonts.google.com/specimen/Raleway');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('https://fonts.google.com/specimen/Raleway');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('https://fonts.google.com/specimen/Raleway');
-    font-style: italic;
-}
-@font-face {
-     font-family: 'Lato';
-    src: url('https://fonts.google.com/specimen/Lato');
-}
-/* Titres*/
-.header-right h1 {
-    font-size: 45px;
-    margin: 0 0 5px 0;
-    font-family: 'Lato';
-}
-
-.header-right h2 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-    font-weight: 300;
-}
-.header-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* EFFET SURVOL */
+.hover-table {
     width: 100%;
-    text-align: center;
-}
-body {
-    font-family: 'Raleway', sans-serif;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    border-collapse: collapse;
+    margin-bottom: 25px;
 }
 
-#cv-container {
-    width: 1160px;
-    background: #fff;
-    box-shadow: 0 0 10px #ccc;
+.hover-table td {
+    padding: 8px 10px;
+    vertical-align: top;
+    transition: background 0.25s ease;
 }
-/* PROFIL = INDENTER + JUSTIFIER */
-#profil p {
-    text-indent: 30px;
-    text-align: justify;
-    line-height: 1.6;
-}
-/* TABLEAUX */
-/* Première colonne en gras */
-td:first-child {
-    font-weight: 600;
-}
-/* Dernière colonne alignée à droite en bleu */
-td:last-child {
+table td:last-child {
     text-align: right;
     color: #17abb3;
 }
-/*LANGUES EN NOIR */
-#langues td {
-    color: #000 !important;
+table td:first-child{
+    text-align: left;
 }
-/* ----- PUCES LISTES ----- */
-ul {
-    list-style-type: square;
+/* Survol des lignes */
+table tr:hover {
+    background: #e3e3e3;
+    border-left: 5px solid #17abb3;
 }
-::marker {
-    color: #17abb3;
+/* FLEX */
+main {
+    display: flex;
 }
-/* Lignes du tableau */
-.hover-table .ligne1 {
-    font-weight: bold;
-    font-size: 16px;
+/* HEADER FLEX*/
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #17abb3;
+    padding: 25px;
+    color: white;
 }
 
-.hover-table .ligne2 {
-    font-style: italic;
-    font-size: 14px;
-    color: #333;
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: zoom-in;
 }
-/* ----- FOOTER ----- */
-footer {
-    text-align: center;
-    padding: 20px;
+
+.profile-pic:hover {
+    transform: scale(1.03);
+}
+/* CONTENU GAUCHE */
+aside {
+    width: 29%;
+    background: #e3e3e3;
+    padding: 30px 25px;
+}
+
+aside h3 {
+    font-family: 'Lato';
+    color: #17abb3;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+/* CONTENU DROITE */
+.section-droite {
+    width: 67%;
+    padding: 40px 35px;
+}
+
+.section-droite h3 {
+    font-family: 'Lato';
+    color: #17abb3;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 22px;
+}
+/* PHOTO PROFIL */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.profile-pic:hover {
+    transform: scale(1.03);
+}
+/* TABLEAUX */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+td {
+    padding: 8px 10px;
+    vertical-align: top;
+}
+/* CONTACT HEADER CENTRÉ */
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; 
+}
+
+.contact-line {
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+}
+
+.contact-header a, 
+.contact-header span {
     color: #fff;
-    background: #17abb3;
-    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Icônes du header */
+.contact-header img.icon {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    filter: invert(100%);
+}/* Icône LinkedIn centré */
+footer .logo {
+    width: 35px;
+    filter: invert(100%);
+    display: block;
+    margin: 0 auto 10px auto;
 }
